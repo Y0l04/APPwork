@@ -9,6 +9,13 @@ import uk.ac.keele.csc20004.robots.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * This is an example of the class you need to implement for the coursework.
+ * Pleese feel free to modify this class as you see fit.
+ * Please add the appropriate Javadoc to the class and its methods.
+ * 
+ * @author 22016974
+ */
 public class MyConcurrentArena extends RobotArena {
 
     private final Object arenaSync = new Object();
@@ -17,6 +24,15 @@ public class MyConcurrentArena extends RobotArena {
         HUMANOID, WHEELED, CYCLOBOT
     }
 
+    /**
+     * This is the constructor for your class.
+     * Please add the appropriate Javadoc to the class and its methods.
+     * 
+     * @param studentId  please document this parameter
+     * @param capacity   please document this parameter
+     * @param repairLine please document this parameter
+     * @param bench      please document this parameter
+     */
     public MyConcurrentArena(int studentId, int capacity, RepairLine repairLine, Bench bench) {
         super(studentId, capacity, repairLine, bench);
         RobotType[] typeCycle = RobotType.values();
